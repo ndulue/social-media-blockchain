@@ -72,8 +72,7 @@ class App extends Component {
     this.setState({ loading: true })
     this.state.socialNetwork.tipPost(id).send({ from: this.state.account, value: tipAmount })
     .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
+     })
   }
 
   constructor(props) {

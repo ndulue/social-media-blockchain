@@ -53,7 +53,7 @@ class Navbar extends Component {
                                   name={post.id}
                                   onClick={(event) => {
                                     //Call the tip function
-                                    event.target.className
+                                    event.target.name
                                     //Tip Amount
                                     let tipAmount = window.web3.utils.toWei('0.1', 'Ether')
                                     this.props.tipPost(event.target.name, tipAmount)

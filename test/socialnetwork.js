@@ -25,7 +25,7 @@ contract('SocialNetwork', ([deployer, author, tipper]) => {
 
         it('has a name', async () => {
             const name = await socialNetwork.name()
-            assert.equal(name, 'emeka')
+            assert.equal(name, 'Mastermind Social Network')
         })
     })
 

@@ -27,7 +27,7 @@ contract SocialNetwork {
     );
 
     constructor() public {
-        name = "Dapp University Social Network";
+        name = "Mastermind Social Network";
     }
 
     function createPost(string memory _content) public {
@@ -42,7 +42,7 @@ contract SocialNetwork {
 
     }
 
-    function tipPost(uint _id) public {
+    function tipPost(uint _id) public payable{
         //Make sure the id is valid
         require(_id > 0 && _id <= postCount); 
         //Fetch the post
@@ -50,7 +50,7 @@ contract SocialNetwork {
         //Fetch the author
         address payable _author = _post.author;
         //Pay the author
-        address(_author).transfer(msg.value);
+        //address(_author).transfer(msg.value);
         //increment the tip amount
         _post.tipAmount = _post.tipAmount + msg.value;
         //update the post

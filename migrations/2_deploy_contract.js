@@ -1,5 +1,5 @@
-const SocialNetwork = artifacts.require("SocialNetwork");
+const socialNetwork = artifacts.require("socialNetwork");
 
 module.exports = function(deployer) {
-  deployer.deploy(SocialNetwork);
+  deployer.deploy(socialNetwork);
 };

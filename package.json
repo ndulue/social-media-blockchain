@@ -19,7 +19,7 @@
     "react-bootstrap": "1.0.0-beta.5",
     "react-dom": "16.8.4",
     "react-scripts": "2.1.3",
-    "truffle": "5.0.5",
+    "truffle": "^5.1.46",
     "web3": "1.0.0-beta.55"
   },
   "scripts": {
@@ -36,5 +36,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndulue/social-media-blockchain.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndulue/social-media-blockchain/issues"
+  },
+  "homepage": "https://github.com/ndulue/social-media-blockchain#readme"
 }
